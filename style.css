@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+*{
+    font-family: Comfortaa;
+}
+/* Menu */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    height: 8vh;
+    width: 80%;
+    margin: 0 auto auto;
+}
+.logo h1{
+    color: black;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.logo a{
+    text-decoration: none;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: black;
+}
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.fa-search{
+    position: absolute;
+    right: 20px;
+    color: white;
+
+}
+.search-bar{
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    background-color: #FFCCFD;
+    padding: 0 20px;
+    border: 0px;
+    border-radius: 25px;
+    outline: none;
+}
+input::placeholder{
+    color: white;
+}
+/* section 1 */
+.herosection {
+    background: linear-gradient(90deg, #CA26FF 10%, #f4cac0 85%, #fff3b0 100%);
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    height: 90vh;
+    
+    border-radius: 20px 0px 225px 20px;
+}
+
+.heropage {
+    flex: 1; 
+    margin: 0 20px;
+    color: black;
+}
+.inside-heropage{
+    margin-bottom: 200px;
+}
+.inside-heropage h1, 
+.inside-heropage h2 {
+    font-size: 50px;
+    margin: 0;
+}
+.inside-heropage h2 {
+    color: white;
+}
+.inside-heropage h2{
+    letter-spacing: 15px;
+}
+
+.text {
+    padding-top: 26px;
+    margin-left: 40px;
+    width: 80%;
+    color: white;
+    
+
+}
+
+.poster {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.poster img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.btn {
+    margin-left: 40px;    
+}
+.btn button{
+    text-decoration: none;
+    color: #FFCCFD;
+    padding: 10px 25px;
+    background-color: #000000;
+    border-radius: 35px;
+    
+}
+/* section 2 */
+.top {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+    width: 100%; 
+}
+  /* ajout de vide pour style border */
+.top::before {
+    content: "";
+    border-bottom: 1px solid #000;
+    width: 50px;
+    margin-right: 10px;
+}
+.top span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #555;
+    margin-right: 10px;
+}
+  /* pour border a droite et pour prendre le reste de l'espace */
+.top::after {
+    content: "";
+    flex: 1; 
+    border-bottom: 1px solid #000;
+}
+/* section 3 movies */
+.film{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px; 
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    text-decoration: none;
+    color: #fcfcfc;
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #000000;
+    border-radius: 35px;
+    width: 238px;
+    height: 51px;
+    cursor: pointer;
+}
+.prison img{
+    height: 410px;
+    width: 240px;
+}
+/* explore */
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.more .title {
+    font-size: 64px;
+}
+/* categorie */
+.categorie ul li{
+    border-bottom: 1px solid rgb(205, 203, 203) ;
+}
+.categorie ul{
+    display: flex;
+    justify-content: center;
+}
+.categorie ul li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: black;
+}
+.categorie ul li{
+    list-style: none;
+}
+.films{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+.movie img{
+    max-width: 300px;
+}
+/* tarifs */
+.services{
+    font-size: 40px;
+    margin-left: 40px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.tarif{ 
+    width: 384px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.part1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 4em;
+    background-color: #330031;
+}
+.part2{
+    padding: 20px;
+    line-height: 40px;
+}
+.space{
+    padding: 40px;
+}
+/* footer */
+footer{
+    background-color: #330031;
+    color: white;
+}
+.titles{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    
+
+}
+.circle{
+    padding-right: 10px;
+}
+.contentFooter{
+    display: flex;
+    justify-content: space-around;
+}
+.socialmedia{
+    display: flex;
+    margin-right: 400px;
+}
