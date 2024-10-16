@@ -56,7 +56,7 @@ header{
     border-radius: 25px;
     outline: none;
 }
-input::placeholder{
+.input::placeholder{
     color: white;
 }
 /* section 1 */
@@ -74,6 +74,7 @@ input::placeholder{
 
 .heropage {
     flex: 1; 
+    padding: 0 65px;
     margin: 0 20px;
     color: black;
 }
@@ -93,12 +94,12 @@ input::placeholder{
 }
 
 .text {
+    line-height: 25px;
     padding-top: 26px;
     margin-left: 40px;
     width: 80%;
     color: white;
-    
-
+    word-spacing: 3px;
 }
 
 .poster {
