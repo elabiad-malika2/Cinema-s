@@ -1,0 +1,50 @@
+section{
+    background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(/movies/fast2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    & .heromovies{
+        color: white;
+    }
+    & .inside-movies{
+        color: white;
+        padding-top: 300px;
+        margin-left: 100px;
+        line-height: 30px;
+    }
+    & .inside-movies h1{
+        font-size: 40px;
+    }
+    & .inside-movies p{
+        font-size: 17px;
+    }
+    & span{
+        color: #FF99FC;
+        font-weight: bold;
+    }
+    & .img-movies{
+        position: absolute;
+        left: 800px;
+        top: 150px;
+
+    }
+    & .img-movies img{
+        height: 320px;
+        float: right;
+        border-radius: 10px;
+    }
+    & .watch-button{
+        margin-top: 30px;
+    }
+    & .watch-button a{
+        width: 347px;
+        height: 82px;
+        text-decoration: none;
+        color: white;
+        padding: 10px 25px;
+        background-color: #FFCCFD;
+        border-radius: 10px;
+    }
+}

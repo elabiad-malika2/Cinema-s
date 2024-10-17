@@ -1,0 +1,67 @@
+
+
+/* Section Tarifs */
+.tarif-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0;
+    background-image: url('/img/tarif\ 1.png');
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+
+}
+
+/* Cartes des tarifs */
+.tarif-cards {
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+    padding: 30px;
+    width: 200px;
+    min-height: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarif-cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre et prix */
+.tarif-cards h3 {
+    font-size: 22px;
+    color: #330031;
+    margin-bottom: 1px;
+}
+
+.tarif-cards .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #330031;
+    margin-bottom: 10px;
+}
+
+/* Texte de description */
+.tarif-cards p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Bouton Buy */
+.tarif-cards button {
+    background-color: #330031;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.tarif-cards button:hover {
+    background-color: #551a5b;
+}
