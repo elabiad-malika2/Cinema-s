@@ -250,29 +250,55 @@ header{
 footer{
     background-color: #330031;
     color: white;
-    height: 400px;
+    height: 450px;
+    margin-top: 30px;
 }
-.titles{
+
+.footer1{
     display: flex;
     justify-content: space-around;
-    padding-top: 80px;
+}
+.partone{
+    width: 30%;
+    padding-top: 60px;
     
-
 }
-.circle{
-    padding-right: 10px;
-}
-.contentFooter{
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    margin-top: 40px;
-}
-.contentFooter>div{
-    width: 33%;
-}
-.socialmedia{
-    display: flex;
+.reseau{
     border-right: 1px solid white;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+.reseau p{
+    padding-left: 20px;
+}
+.footer1 ul li{
+    list-style-type: circle;
+}
+.parttwo{
+    width: 30%;
+    padding-top: 60px;
 
+}
+.para {
+    border-right: 1px solid white;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+
+}
+.partthree{
+    width: 30%;
+    padding-top: 60px;
+}
+.connexion{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.footer2{
+    margin: 60px;
+    text-align: center;
 }
