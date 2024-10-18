@@ -65,3 +65,6 @@
 .tarif-cards button:hover {
     background-color: #551a5b;
 }
+footer{
+    margin: 0px !important;
+}

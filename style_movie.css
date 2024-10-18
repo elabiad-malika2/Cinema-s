@@ -121,3 +121,6 @@
 .note:hover{
     cursor: pointer;
 }
+footer{
+    margin: 0px !important;
+}

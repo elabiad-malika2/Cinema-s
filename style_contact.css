@@ -64,3 +64,6 @@ input::placeholder{
 textarea::placeholder{
     color: #000000;
 }
+footer{
+    margin: 0px !important;
+}

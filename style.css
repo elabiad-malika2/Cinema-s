@@ -189,32 +189,48 @@ header{
     font-size: 64px;
 }
 /* categorie */
-.categorie ul li{
-    border-bottom: 1px solid rgb(205, 203, 203) ;
-}
-.categorie ul{
+.filtre {
+    margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
 }
-.categorie ul li a{
-    text-decoration: none;
-    padding: 0px 20px;
-    color: black;
+input[type="radio"]{
+    display: none;
 }
-.categorie ul li{
-    list-style: none;
+
+input[type="radio"]:checked + label{
+    border-bottom: #933c24 3px solid;
 }
-.films{
-    display: grid;
+input[type="radio"] label:hover{
+    cursor: pointer;
+}
+
+input[id="Action"]:checked ~ .horror{
+    display: none;
+}
+input[id="Horror"]:checked ~ .action{
+    display: none;
+}
+.image {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    max-width: 900px;
-    margin: auto;
+    width: 80%;
 }
-.movie img{
-    max-width: 300px;
+
+.image img {
+    width: 350px; 
+    object-fit: cover;
+    
+}
+.horror img{
+    width: 360px;
+    height: 350px;
+    border-radius: 8px;
 }
 /* tarifs */
 .services{
