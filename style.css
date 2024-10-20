@@ -24,6 +24,8 @@ header{
 }
 .nav ul{
     display: flex;
+    align-items: center;
+    
 }
 .nav ul li{
     list-style: none;
@@ -155,9 +157,19 @@ header{
 .film{
     margin-top: 25px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 60px; 
+    gap: 40px; 
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    transition: transform 0.3 ease;
+}
+.card:hover{
+    transform:scale(1.05);
 }
 .button{
     display: flex;
@@ -228,7 +240,7 @@ input[id="Horror"]:checked ~ .action{
     
 }
 .horror img{
-    width: 360px;
+    width: 350px;
     height: 350px;
     border-radius: 8px;
 }
@@ -236,16 +248,24 @@ input[id="Horror"]:checked ~ .action{
 .services{
     font-size: 40px;
     margin-left: 40px;
+    text-align: center;
 }
 .cards{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .tarif{ 
     width: 384px;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.tarif:hover {
+    transform: scale(1.05); 
 }
 .part1{
     display: flex;
@@ -266,7 +286,7 @@ input[id="Horror"]:checked ~ .action{
 footer{
     background-color: #330031;
     color: white;
-    height: 450px;
+    height: auto;
     margin-top: 30px;
 }
 
@@ -317,4 +337,80 @@ footer{
 .footer2{
     margin: 60px;
     text-align: center;
+}
+@media (width<480px) {
+    header {
+        width: 80%;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+    .fa-search{
+        display: none;
+    }
+    .nav ul li a{
+        font-size: 16px;
+        padding: 8px;
+    }
+    .herosection{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px 0px 100px 10px;
+    }
+    .inside-heropage{
+        margin-bottom: 0px;
+    }
+    .inside-heropage h1, 
+    .inside-heropage h2 {
+    font-size: 40px;
+    }
+    .text {
+        line-height: 25px;
+        padding-top: 0px;
+        margin-left: 20px;
+        width: 100%;
+        color: white;
+        word-spacing: 1px;
+    }
+    .image img {
+        width: 300px; 
+        
+    }
+    .horror img{
+        width: 300px;
+        height: 300px;
+    }
+    .tarif {
+        margin-bottom: 20px;
+    }
+    .part2 {
+        line-height: 30px;  
+    }
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer1 ul li{
+        text-align: center;
+        list-style-type: none;
+        font-size: 25px;
+    }
+    .partone , .parttwo , .partthree{
+        width: 90%;
+    }
+    .partone .reseau, .parttwo .para, .partthree .connexion{
+        padding-left: 70px;        
+    }
+    .reseau , .para{
+        border-right: none;
+    }
 }
